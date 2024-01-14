@@ -1,0 +1,18 @@
+<h2>Art Details</h2>
+<table >  
+        <tr>
+            <th>Title</th>
+            <th>Creator</th>
+            <th>Creation Date</th>
+        </tr>
+
+      <!-- display each data line and format -->
+    <tr *ngFor="let rec of artDetailsInfo">
+        <td> 
+            <a [ngStyle]="{ 'color': 'red' }" href="{{rec.url}}" target="_blank">{{rec.title}}</a> 
+        </td>
+        <td [ngStyle]="{ 'color': 'green' }">{{rec.creator}}</td>
+        <td [ngStyle]="{ 'color': 'blue' }">{{rec.creation_date}}</td>
+    </tr>
+
+</table>

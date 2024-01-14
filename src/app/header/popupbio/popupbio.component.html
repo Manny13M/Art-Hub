@@ -1,0 +1,15 @@
+<h4 mat-dialog-title>About me</h4>
+
+<mat-dialog-content>
+    <h2>{{ data.title }}</h2>
+    <p>Name: {{ data.A4Name }}</p>
+    <p>Email: {{ data.A4Email }}</p>
+    <p>Login: {{ data.A4Login }}</p>
+    <p>ID: {{ data.A4ID }}</p>
+    <img src="{{ data.A4Photo }}" width="150px">
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button mat-raised-button [mat-dialog-close]="true" (click)="onCancelClicked()"> Cancel </button>
+    <button mat-raised-button color="primary" (click)="onOkClicked()"> Ok </button>
+</mat-dialog-actions>

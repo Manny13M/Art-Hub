@@ -1,0 +1,5 @@
+<div>
+    <h3 class="header">Click the button to see that culture's art</h3>
+        <button mat-fab color="primary" (click)="createCulture(i)" *ngFor="let cultureName of culturesFeaturedList; let i = index">{{ cultureName.culture }}</button>
+        <p [innerHTML]="outCulture" id="outid"> </p>
+</div>

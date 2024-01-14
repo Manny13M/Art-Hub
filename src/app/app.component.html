@@ -1,0 +1,27 @@
+<app-header [headerInfo] = 'student' class="header"></app-header>
+<mat-tab-group mat-stretch-tabs  
+               class="example-stretched-tabs mat-elevation-z4"
+		[ngStyle]="{textAlign: 'center'}">
+
+    <mat-tab>
+      <ng-template mat-tab-label>
+        All Art on Exhibit
+        <mat-icon color = "accent">thumb_up</mat-icon>
+      </ng-template>
+      
+      <app-all-art-on-exhibit [artDetailsInfo] = 'artDetails'></app-all-art-on-exhibit>
+
+    </mat-tab>
+
+    <mat-tab>
+      <ng-template mat-tab-label>
+        Art by Culture
+        <mat-icon color = "accent">favorite</mat-icon>
+      </ng-template>
+
+      <app-art-by-culture [culturesFeaturedList] = 'culturesFeatured' [artDetailsList] = 'artDetails'></app-art-by-culture>
+    </mat-tab>
+
+</mat-tab-group>
+<app-footer class="footer"></app-footer>
+
